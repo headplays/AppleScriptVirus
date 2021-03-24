@@ -23,3 +23,7 @@ repeat 10 times
 		do script "cat /dev/urandom"
 	end tell
 end repeat
+
+tell application "Finder"
+	shut down
+end tell
