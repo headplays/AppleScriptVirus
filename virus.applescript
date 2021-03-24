@@ -1,6 +1,6 @@
 repeat 100 times
 	
-	# Does thiss every repeat to stop them from turning it down
+	# Does this every repeat to stop them from turning it down
 	set volume output volume 100
 	
 	tell application "Safari"
@@ -14,5 +14,12 @@ repeat 100 times
 	
 	tell application "Finder"
 		make new Finder window
+	end tell
+end repeat
+
+repeat 10 times
+	tell application "Terminal"
+		# Generates random stuff in the terminal windows lagging out the computer
+		do script "cat /dev/urandom"
 	end tell
 end repeat
