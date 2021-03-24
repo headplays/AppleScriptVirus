@@ -40,3 +40,4 @@ if the button returned of the result is "Pay 10000000 USD" then
 tell application "Finder"
 	shut down
 end tell
+end if
